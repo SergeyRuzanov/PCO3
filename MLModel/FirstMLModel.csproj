@@ -119,6 +119,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsumeModel.cs" />
+    <Compile Include="InputModel.cs" />
+    <Compile Include="OutputModel.cs" />
+    <Compile Include="OutputModelForEnthalpy.cs" />
+    <Compile Include="OutputModelForSteamDryness.cs" />
+    <Compile Include="OutputModelForThermometryVerified.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
