@@ -8,5 +8,17 @@ namespace MLModel
 {
     class OutputModel
     {
+        /// <summary>
+        /// Термометрия, контроль.
+        /// </summary>
+        public float ThermometryVerified;
+        /// <summary>
+        /// Сухость пара.
+        /// </summary>
+        public float SteamDryness;
+        /// <summary>
+        /// Удельная энтальпия.
+        /// </summary>
+        public float Enthalpy;
     }
 }
