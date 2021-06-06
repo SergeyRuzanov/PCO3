@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLModel", "MLModel\MLModel.csproj", "{E7443D2B-8E8A-4DEA-AFEE-C4692CC4EE5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMLModel", "MLModel\FirstMLModel.csproj", "{E7443D2B-8E8A-4DEA-AFEE-C4692CC4EE5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildModelsConsole", "BuildModelsConsole\BuildModelsConsole.csproj", "{6C7E3C51-2D30-48D7-85D2-C15D5D94D714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondMLModel", "SecondMLModel\SecondMLModel.csproj", "{3FEC0F84-7763-4D4B-9FDB-B06371C0DCCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6C7E3C51-2D30-48D7-85D2-C15D5D94D714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C7E3C51-2D30-48D7-85D2-C15D5D94D714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C7E3C51-2D30-48D7-85D2-C15D5D94D714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEC0F84-7763-4D4B-9FDB-B06371C0DCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEC0F84-7763-4D4B-9FDB-B06371C0DCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEC0F84-7763-4D4B-9FDB-B06371C0DCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEC0F84-7763-4D4B-9FDB-B06371C0DCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
