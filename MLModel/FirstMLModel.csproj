@@ -9,8 +9,8 @@
     <ProjectGuid>{E7443D2B-8E8A-4DEA-AFEE-C4692CC4EE5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MLModel</RootNamespace>
-    <AssemblyName>MLModel</AssemblyName>
+    <RootNamespace>FirstMLModel</RootNamespace>
+    <AssemblyName>FirstMLModel</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
