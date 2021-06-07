@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SecondMLModel
 {
-    class InputModel
+    public class InputModel
     {
         /// <summary>
         /// Глубина.

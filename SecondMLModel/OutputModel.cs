@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SecondMLModel
 {
-    class OutputModel
+    public class OutputModel
     {
         /// <summary>
         /// Барометрия начальная.

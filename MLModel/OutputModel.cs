@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MLModel
 {
-    class OutputModel
+    public class OutputModel
     {
         /// <summary>
         /// Термометрия, контроль.

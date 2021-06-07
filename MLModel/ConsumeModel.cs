@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MLModel
 {
-    class ConsumeModel
+    public class ConsumeModel
     {
         private PredictionEngine<InputModel, OutputModelForThermometryVerified> PredictionEngineForThermometryVerified;
         private PredictionEngine<InputModel, OutputModelForSteamDryness> PredictionEngineForSteamDryness;
