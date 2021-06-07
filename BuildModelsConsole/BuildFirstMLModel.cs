@@ -149,14 +149,14 @@ namespace BuildModelsConsole
             var dataForEnthalpyAndSteamDryness = mlContext.Data.LoadFromTextFile<InputModel>(TRAIN_DATA_FILEPATH + @"Энтальпия и сухость\*", ';', true);
 
             //Удаляем пустые строки и строки, в которых отрицательные значения (-999,250; -9999).
-            dataForThermometry = mlContext.Data.FilterRowsByMissingValues(dataForThermometry, new[] { "Depth", "Barometry", "Thermometry", "Measurement", "Density", "Label1", "Label2", "Label3" });
+            dataForThermometry = mlContext.Data.FilterRowsByMissingValues(dataForThermometry, new[] { "Depth", "Barometry", "Thermometry", "Measurement", "Density", "Label1"});
             dataForEnthalpyAndSteamDryness = mlContext.Data.FilterRowsByMissingValues(dataForEnthalpyAndSteamDryness, new[] { "Depth", "Barometry", "Thermometry", "Measurement", "Density", "Label1", "Label2", "Label3" });
-            dataForThermometry = mlContext.Data.FilterByCustomPredicate<InputModel>(dataForThermometry, (t) => { return t.Barometry < 0 || t.Density < 0 || t.Depth < 0 || t.Enthalpy < 0 || t.Measurement < 0 || t.SteamDryness < 0 || t.Thermometry < 0 || t.ThermometryVerified < 0; });
+            dataForThermometry = mlContext.Data.FilterByCustomPredicate<InputModel>(dataForThermometry, (t) => { return t.Barometry < 0 || t.Density < 0 || t.Depth < 0 || t.Thermometry < 0 || t.ThermometryVerified < 0; });
             dataForEnthalpyAndSteamDryness = mlContext.Data.FilterByCustomPredicate<InputModel>(dataForEnthalpyAndSteamDryness, (t) => { return t.Barometry < 0 || t.Density < 0 || t.Depth < 0 || t.Enthalpy < 0 || t.Measurement < 0 || t.SteamDryness < 0 || t.Thermometry < 0 || t.ThermometryVerified < 0; });
 
             //Разделяем данные на тестовые и тренирововчные.
-            DataForThermometryVerified = mlContext.Data.TrainTestSplit(dataForThermometry, 0.2, seed: 0);
-            DataForSteamDrynessAndEnthalpy = mlContext.Data.TrainTestSplit(dataForEnthalpyAndSteamDryness, 0.2, seed: 0);
+            DataForThermometryVerified = mlContext.Data.TrainTestSplit(dataForThermometry, 0.2, seed: 1);
+            DataForSteamDrynessAndEnthalpy = mlContext.Data.TrainTestSplit(dataForEnthalpyAndSteamDryness, 0.2, seed: 1);
         }
     }
 }

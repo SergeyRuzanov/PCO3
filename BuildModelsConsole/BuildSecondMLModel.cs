@@ -162,11 +162,11 @@ namespace BuildModelsConsole
             var data = mlContext.Data.LoadFromTextFile<InputModel>(TRAIN_DATA_FILEPATH, ';', true);
 
             //Удаляем пустые строки и строки, в которых отрицательные значения (-999,250; -9999).
-            data = mlContext.Data.FilterRowsByMissingValues(data, new[] { "Depth", "Barometry", "Thermometry", "Measurement", "Density", "Label1", "Label2", "Label3" });
+            data = mlContext.Data.FilterRowsByMissingValues(data, new[] { "Depth", "Barometry", "Thermometry", "Measurement", "Density", "Label1", "Label2", "Label3", "Label4" });
             data = mlContext.Data.FilterByCustomPredicate<InputModel>(data, (t) => { return t.Barometry < 0 || t.Density < 0 || t.Depth < 0 || t.Measurement < 0 || t.Thermometry < 0 || t.MeasurementInitial < 0 || t.ThermometryInitial < 0 || t.BarometryInitial < 0 || t.DensityInitial < 0; });
 
             //Разделяем данные на тестовые и тренирововчные.
-            Data = mlContext.Data.TrainTestSplit(data, 0.2, seed: 0);
+            Data = mlContext.Data.TrainTestSplit(data, 0.2, seed: 1);
         }
     }
 }
